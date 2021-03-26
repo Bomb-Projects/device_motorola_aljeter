@@ -12,3 +12,5 @@ allow system_app sysfs_zram:file r_file_perms;
 allow system_app proc_vmallocinfo:file { getattr open read };
 
 get_prop(system_app, camera_prop)
+
+r_dir_file(system_app, sysfs_battery_supply)
