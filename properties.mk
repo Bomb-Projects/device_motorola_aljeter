@@ -102,6 +102,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=4m \
     dalvik.vm.heapmaxfree=8m
 
+# Soc
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=QTI \
+    ro.soc.model=MSM8937
+
 # Debug
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
