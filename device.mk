@@ -41,8 +41,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@7.0-impl:32 \
-    android.hardware.audio.effect@7.0-impl:32 \
-    android.hardware.bluetooth.audio@2.1-impl:32
+    android.hardware.audio.effect@7.0-impl:32
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration_7_0.xml \
@@ -75,6 +74,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5 \
     android.hardware.camera.provider@2.5 \
     android.hardware.camera.provider@2.5-service
+
+# bluetooth
+PRODUCT_PACKAGES += \
+android.hardware.bluetooth.audio-impl
 
 # Releasetools script
 PRODUCT_COPY_FILES += \
