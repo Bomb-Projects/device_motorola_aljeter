@@ -264,3 +264,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Blur
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.supports_background_blur=0
+
+# Zygote
+PRODUCT_PROPERTY_OVERRIDES += \
+    zygote.critical_window.minute=10
