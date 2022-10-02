@@ -87,10 +87,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GcamGo
 
-# Component overrides
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
-
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8937 \
