@@ -1,2 +1,5 @@
 vendor.qti.hardware.slmadapter::ISlmAdapter                  u:object_r:hal_slmadapter_hwservice:s0
 vendor.qti.hardware.mwqemadapter::IMwqemAdapter              u:object_r:hal_mwqemadapter_hwservice:s0
+
+# Fingerprint
+vendor.egistec.hardware.fingerprint::IBiometricsFingerprintEts                       u:object_r:default_android_hwservice:s0
