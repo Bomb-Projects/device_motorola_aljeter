@@ -82,10 +82,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     android.hardware.camera.provider@2.5-service
 
-# CNE
-PRODUCT_PACKAGES += \
-    libcnefeatureconfig
-
 # Releasetools script
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/check_device.sh:install/bin/check_device.sh
@@ -144,26 +140,22 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1
 
 # GPS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti:64 \
-    android.hardware.gnss@2.1-service-qti \
-    libavservices_minijail.vendor \
-    libbatching \
-    libgeofencing \
-    libgnss \
-    libgnsspps \
-    libsynergy_loc_api \
-    libwifi-hal-ctrl
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+    $(LOCAL_PATH)/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    $(LOCAL_PATH)/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    $(LOCAL_PATH)/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+    $(LOCAL_PATH)/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
+    $(LOCAL_PATH)/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
+    $(LOCAL_PATH)/gps/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf
 
 PRODUCT_PACKAGES += \
-    apdr.conf \
-    flp.conf \
-    gnss_antenna_info.conf \
-    gps.conf  \
-    izat.conf \
-    lowi.conf \
-    sap.conf \
-    xtwifi.conf
+    libminijail \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.1.vendor
 
 # Healthd
 PRODUCT_PACKAGES += \
@@ -188,6 +180,7 @@ TARGET_SCREEN_WIDTH := 720
 
 # IMS
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
     ims-ext-common \
     ims_ext_common.xml
 
@@ -229,10 +222,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 # MotoActions
-ifeq ($(filter %ahannah %rhannah,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     MotoActions
-endif
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -275,19 +266,15 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     $(LOCAL_PATH)/configs/com.motorola.cameraone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.cameraone.xml
 
-ifeq ($(filter %ahannah %james %rhannah,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.xml \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.xml
-endif
 
-ifeq ($(filter %james %rhannah,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute.xml \
     frameworks/native/data/etc/android.hardware.vulkan.level-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
-endif
 
 # IDC
 PRODUCT_COPY_FILES += \
@@ -327,9 +314,11 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
     librmnetctl \
-    libsensorndkbridge \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
@@ -383,17 +372,11 @@ PRODUCT_PACKAGES += \
     libmemset_shim \
     libqsapshim
 
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/qcom-caf/msm8996
-
-# Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Tethering
 PRODUCT_PACKAGES += \
