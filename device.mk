@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
+    audio.primary.default \
     audio.primary.msm8937 \
     audio.r_submix.default \
     audio.usb.default \
