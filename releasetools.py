@@ -1,4 +1,4 @@
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ import re
 
 def AddBasebandAssertion(info):
   android_info = info.input_zip.read("OTA/android-info.txt")
-  m = re.search(r'require\s+version-baseband\s*=\s*(\S+)', android_info)
+  m = re.search(r'require\s+version-baseband\s*=\s*(\S+)', android_info.decode('utf-8'))
   if m:
     versions = m.group(1).split('|')
     if len(versions) and '*' not in versions:
