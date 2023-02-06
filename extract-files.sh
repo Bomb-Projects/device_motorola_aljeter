@@ -26,13 +26,6 @@ source "${HELPER}"
 
 function blob_fixup() {
     case "${1}" in
-        # memset shim
-        vendor/bin/charge_only_mode)
-            for LIBMEMSET_SHIM in $(grep -L "libmemset_shim.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libmemset_shim.so" "${LIBMEMSET_SHIM}"
-            done
-            ;;
-
 	vendor/lib/libmmcamera_ppeiscore.so)
 	    "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
 	    ;;
