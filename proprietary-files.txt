@@ -891,8 +891,8 @@ vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|b3458f1507146fe99f2f70ed1883ae1ceb2e17bb
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|29130d7b0050885a6b455390a02a8615563403c4
 
-# Gatekeeper
-vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8937.so|3125e1bad9e8231df1628d909ba514b250835a7d
+# Gatekeeper - from LA.UM.9.6.3.r1-06200-89xx.0
+vendor/lib64/hw/gatekeeper.msm8937.so|7be56a403c30f093865f08bf0f0335aeb99ec7fd
 
 # GPS - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti|d458a2aadc1d00df4696d6793e550f4a9422a2c9
@@ -1028,8 +1028,8 @@ vendor/firmware/a530v3_gpmu.fw2|0a2f6f450231673d75ba39e5d28776db3becf810
 vendor/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
 vendor/firmware/a540_gpmu.fw2|3530f10b4825a3b08c79e0bcfaf6471ec8422f24
 
-# Keymaster
-vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8937.so|d8303e587ac8cd79205ddf5e0627edefbc281561
+# Keystore - from LA.UM.9.6.3.r1-06200-89xx.0
+vendor/lib64/hw/keystore.msm8937.so|0942d9308cc9dfbc305dd0b9e8b1e3ba75ebae38
 
 # Listen - from dpl_sprout - RKQ1.200928.002
 vendor/lib/libadpcmdec.so|7a38d6b28b27cf663681ad077614a03164418f91

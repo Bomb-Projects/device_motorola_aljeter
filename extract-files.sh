@@ -33,14 +33,6 @@ function blob_fixup() {
             done
             ;;
 
-        vendor/lib64/hw/gatekeeper.msm8937.so)
-            "${PATCHELF}" --set-soname gatekeeper.msm8937.so "${2}"
-            ;;
-
-        vendor/lib64/hw/keystore.msm8937.so)
-            "${PATCHELF}" --set-soname keystore.msm8937.so "${2}"
-            ;;
-
 	vendor/lib/libmmcamera_ppeiscore.so)
 	    "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
 	    ;;
