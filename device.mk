@@ -99,21 +99,24 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     gralloc.msm8937 \
     hwcomposer.msm8937 \
+    memtrack.msm8937 \
     libdisplayconfig \
-    libqdMetaData.system \
-    libtinyxml \
+    libdisplayconfig.qti \
     libvulkan \
-    memtrack.msm8937
+    libqdMetaData \
+    liboverlay \
+    libtinyxml \
+    vendor.display.config@1.0.vendor \
+    vendor.display.config@2.0
 
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-impl:64 \
-    android.hardware.graphics.allocator@2.0-service \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    vendor.display.config@1.3 \
-    vendor.display.config@1.3.vendor
+    android.hardware.memtrack@1.0-service
 
 # Sensors
 PRODUCT_COPY_FILES += \
