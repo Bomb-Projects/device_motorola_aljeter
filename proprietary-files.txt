@@ -945,6 +945,11 @@ vendor/lib64/libgnss.so|3d53fab01ea65dc3f25f51120aff670da3e69ccc
 vendor/lib64/libgnsspps.so|a936f15ea4ebe8f705300747c6ecc8150a0584e1
 vendor/lib64/libgps.utils.so|6bfea36a114fd5c13575abb4a315d53e7ac9bd49
 
+# Gatekeeper - from deen_sprout - QPKS30.54-22-12
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|eeb4ba9eacb57c958051a47d307968254ee081d0
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|8c5a8f0bec5942dc3527cff95ae09959234e9e58
+
 # Keymaster - from deen_sprout - QPKS30.54-22-12
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|023a0e237fbc068a3191e91e5a1ec0ea5831d52b
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
