@@ -382,7 +382,7 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libui_shim \
-    libqsap_shim
+    libgui_shim \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

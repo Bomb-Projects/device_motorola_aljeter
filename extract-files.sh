@@ -30,15 +30,14 @@ function blob_fixup() {
 	    "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
 	    ;;
 
-        vendor/lib/libmot_gpu_mapper.so | vendor/lib/libmmcamera_vstab_module.so | vendor/lib/libjscore.so)
+        system_ext/lib64/lib-imsvideocodec.so)
+            "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+	    ;;
+
+        vendor/lib/libmmcamera_vstab_module.so | vendor/lib/libjscore.so)
             sed -i "s/libgui/libwui/" "${2}"
             ;;
 
-        vendor/lib64/libmdmcutback.so)
-            sed -i "s|libqsap_sdk.so|libqsapshim.so|g" "${2}"
-            ;;
-
-        # Fix camera recording
         vendor/lib/libmmcamera2_pproc_modules.so)
             sed -i "s/ro.product.manufacturer/ro.product.nopefacturer/" "${2}"
             ;;
