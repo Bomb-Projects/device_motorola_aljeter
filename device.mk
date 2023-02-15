@@ -416,7 +416,6 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     libwpa_client \
-    libqsap_sdk \
     wcnss_service \
     WifiOverlay
 
