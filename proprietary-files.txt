@@ -1358,9 +1358,6 @@ vendor/lib64/libhdcpsrm.so|85c4b0f714b3946d94d32811d4c85ad2dd244d65
 vendor/lib64/liboemcrypto.so|0ed2cd7b6d34d2043956a7643b22c0fc212282b1
 vendor/lib64/libwvhidl.so|61b056c74731122836e57f1110f2174fd05cbfdb
 
-# Charger
-vendor/bin/charge_only_mode
-
 # Wi-Fi
 vendor/bin/cnss-daemon
 
