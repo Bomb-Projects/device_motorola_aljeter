@@ -91,6 +91,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=4m \
     dalvik.vm.heapmaxfree=8m
 
+# Fastbootd
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fastbootd.available=true
+
 # Soc
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=QTI \
