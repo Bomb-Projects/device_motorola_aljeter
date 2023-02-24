@@ -80,7 +80,6 @@ vendor/lib/libremosaic_daemon.so
 vendor/lib/libswvdec.so
 vendor/lib/libvideoutils.so
 vendor/lib/libzxingcpp.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 
 # Bluetooth - from deen_sprout - PPKS29.68-16-36-13
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|063da7375148fdd56930a54ea8d3e276725e62df
