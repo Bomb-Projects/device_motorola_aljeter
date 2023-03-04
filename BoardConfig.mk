@@ -104,13 +104,10 @@ TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
 TARGET_KERNEL_CONFIG := jeter_defconfig
 TARGET_KERNEL_VERSION := 4.9
 
-# Clang
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := proton
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton-clang
-
+# llvm
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+    LLVM=1 \
+    LLVM_IAS=1
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
