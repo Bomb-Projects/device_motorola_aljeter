@@ -35,5 +35,5 @@ git clone https://github.com/LineageOS/android_hardware_qcom_audio -b lineage-20
 rm -rf hardware/qcom-caf/msm8996/media
 git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-20.0-caf-msm8996 hardware/qcom-caf/msm8996/media
 rm -rf hardware/qcom-caf/msm8996/display
-git clone -b thirteen https://github.com/Team-NoobMaster69/android_hardware_qcom_display hardware/qcom-caf/msm8996/display
+git clone https://github.com/LineageOS/android_hardware_qcom_display -b lineage-20.0-caf-msm8996 hardware/qcom-caf/msm8996/display
 echo ""
