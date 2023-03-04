@@ -840,13 +840,13 @@ vendor/lib64/libQSEEComAPI.so|86252d1363ce220cf213f02636495f41904e7ddd
 vendor/lib64/libStDrvInt.so|add517206707a8bd7f116b6b1554a16c51fe6668
 vendor/lib64/libdrmfs.so|0af7d14a3d9f906d2c95650ca748399882e746cc
 vendor/lib64/libdrmtime.so|beac981103d7e61cf58be46f0729ec123f56b629
+vendor/lib64/libops.so|3c763226ccc3b0f32e131af71a458b41bf2b3d8d
 vendor/lib64/libqisl.so|529d7e20bb33147fe3404c1a58d266e49228046a
 vendor/lib64/librpmb.so|98c96895dbf6c7ab8791c76a9109a89cc692b85b
 vendor/lib64/libsecureui.so|172515cb527477c4669c43529628586aeee264bc
 vendor/lib64/libsecureui_svcsock.so|2232f56927964f10d41868919d94711930d50ed0
-vendor/lib64/libssd.so|1e2243f7eb5d36544a5ae51166d748b7b30e63c6
-vendor/lib64/libops.so|3c763226ccc3b0f32e131af71a458b41bf2b3d8d
 vendor/lib64/libspl.so|f8bbe0322ce06a545f5dc79c888183ac61673b68
+vendor/lib64/libssd.so|1e2243f7eb5d36544a5ae51166d748b7b30e63c6
 
 # Display QDCMs
 vendor/etc/qdcm_calib_data_mipi_mot_video_djn_hd_570.xml
@@ -1054,9 +1054,6 @@ system_ext/lib64/libmmosal.so|ef19a38be8283c87eabe96f74bc8a71881ab1f0a
 vendor/lib/libAlacSwDec.so|9404a482dd25bb77cdfec7b1ddef8a68d6946fec
 vendor/lib/libApeSwDec.so|cecc7a897711b96321128210efbfa03ecbd02714
 vendor/lib/libFlacSwDec.so|7d661ac115de794bc6f6f7d20d4f93735b698c52
-vendor/lib/libmmosal.so|e23d6d1b2a035c08ffd7ac72d5241ebff37f0d14
-vendor/lib/libOmxVpp.so|825146c3065d4f08ac54de62c43d4be31debca31
-vendor/lib/libvpplibrary.so|de25e347aeb813bfe2d091cbd61cc70219242af3
 vendor/lib/libOmxAacDec.so|7c7ffe4f9ae9881b66ecde16bae36e9fb9a26676
 vendor/lib/libOmxAlacDec.so|268751eecd1d5ba42ae18e6a7c02377ae6ebd850
 vendor/lib/libOmxAlacDecSw.so|59055e1c00ed82f7c310dcf78d4104b9f803d12e
@@ -1069,7 +1066,10 @@ vendor/lib/libOmxEvrcDec.so|99202c934d1fdd1e428527019b7dc92dde40edc6
 vendor/lib/libOmxG711Dec.so|9e74e8d60466708eabc155910d14f597041631c3
 vendor/lib/libOmxQcelp13Dec.so|4424762bcf639284112395b4c9d63cb58c799638
 vendor/lib/libOmxVideoDSMode.so|71c4f23de93e91931c077ed511301185152422da
+vendor/lib/libOmxVpp.so|825146c3065d4f08ac54de62c43d4be31debca31
 vendor/lib/libOmxWmaDec.so|c47e74a73afa486429c009f338779cd78566f77c
+vendor/lib/libmmosal.so|e23d6d1b2a035c08ffd7ac72d5241ebff37f0d14
+vendor/lib/libvpplibrary.so|de25e347aeb813bfe2d091cbd61cc70219242af3
 vendor/lib/libvqzip.so|f85628ea634df1c31d69380d960ad7ea3396e7b2
 vendor/lib64/libmmosal.so|e9fdb48163e92b089cea0c397723a8416436c272
 
