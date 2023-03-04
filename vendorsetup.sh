@@ -5,9 +5,8 @@ git clone -b thirteen git@github.com:Team-NoobMaster69/vendor_motorola_jeter.git
 echo ""
 
 # Kernel
-echo "cloning kernel and clang"
+echo "cloning kernel"
 git clone -b aljeter-337 git@github.com:Team-NoobMaster69/kernel_motorola_msm8953.git kernel/motorola/msm8953
-git clone --depth=1 -b master https://github.com/kdrag0n/proton-clang prebuilts/clang/host/linux-x86/proton-clang
 echo ""
 
 # Dependencies
