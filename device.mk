@@ -88,6 +88,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
+# Doze
+PRODUCT_PACKAGES += \
+    MotoDoze
+
 # Releasetools script
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/fs/check_device.sh:install/bin/check_device.sh
