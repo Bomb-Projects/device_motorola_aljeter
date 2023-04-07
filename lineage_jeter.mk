@@ -8,7 +8,6 @@ $(call inherit-product, device/motorola/jeter/device.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 # Target
 TARGET_BOOT_ANIMATION_RES := 720
