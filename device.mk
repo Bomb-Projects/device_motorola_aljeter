@@ -9,6 +9,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/jeter/jeter-vendor.mk)
 
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 27
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
