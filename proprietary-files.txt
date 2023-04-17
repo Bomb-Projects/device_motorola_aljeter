@@ -795,13 +795,13 @@ vendor/lib/libmmcamera_vstab_module.so
 
 # Camera - from vince
 vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
-vendor/lib/libmmcamera_ppeiscore.so|6c6665aad61356da60ffd9b860145cb929cd85a1
+vendor/lib/libmmcamera_ppeiscore.so|b8af141bbb50f7d0ba0f6137563d00ec5eb70f3b
 vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
 vendor/lib/libmmcamera_sw_tnr.so|59b0f350eb0cfa85399c296af14ac680ca99705e
 vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
 vendor/lib/liboptizoom.so|1e92993743636c045438f1f15c07c1e835d9ca46
 vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
-vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
+vendor/lib/libtrueportrait.so|8d5c3f733a6351610f70592bd65f7461e0c55135
 vendor/lib/libllvd_sw_tnr.so|406895e2ae614ac84a62d1758bce1810b99c5cda
 
 # CNE
@@ -886,27 +886,27 @@ vendor/lib64/libets_teeclient.so|5c800a3042828c73f068c35b4c6ddd9d9f6fe48a
 vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so|c39c16ac4c38a5aa8580dad4d2f066e0a5872d98
 
 # Keymaster - from deen_sprout - QPKS30.54-22-12
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|ac0aabf396888c9dc8b6dc23291e190daa943e24
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|023a0e237fbc068a3191e91e5a1ec0ea5831d52b
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|6a04ddf5b92e97596e3764d2474ca8c26fa80139
 vendor/lib64/libkeymasterdeviceutils.so|5dcb23eb145570876dd1f4f05ca56a114bc9de56
 vendor/lib64/libkeymasterprovision.so|3eb6d2ed05871605cf020bf8459296aea2453f90
-vendor/lib64/libkeymasterutils.so|75d58b3f6aea66220c3352e4bef33dad9333fd1d
+vendor/lib64/libkeymasterutils.so|45cc1a92cf151c56d940c6a7e23d64a207357b9a
 
 # Sensors - from deen_sprout - QPKS30.54-22-11
-vendor/bin/sensors.qti|5f43a818c4c682956bed031b4fc9583d42b7f70a
-vendor/lib/libsensor1.so|637aa4ec588533a3dcddb6ed95a7434f1f6b7d59
-vendor/lib/libsensor_reg.so|f81737c08759acc8add3ce87160f1ae24263546d
-vendor/lib/sensor_calibrate.so|53353469aa930cd298d6ff4a1981cc7cebb03d5e
-vendor/lib/sensors.rp.so|e35005a9a8e0aa574bb116490ff0240eb8b9a094
-vendor/lib/sensors.ssc.so|e69b474fd6e94e93b6684935455cc6c9ef5c2192
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|82fae4500ad96d42ef48f9c0c9d00368c34480c5
-vendor/lib64/libsensor1.so|74faeeb9d8679fa1260bbc0cd7aa32cc859204cd
-vendor/lib64/libsensor_reg.so|fc6d0f4021f01ba0d0c2406e7a58dd1af4d21b19
-vendor/lib64/sensor_calibrate.so|47f475a83d6eb59f45a810299116893c91acf79e
-vendor/lib64/sensors.rp.so|c792a29071b6e8521e205b0d0e87a96401407618
-vendor/lib64/sensors.ssc.so|761d2b907b60176a8ef77e7f9296337b936a5351
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|4ca1d6dbe9acfbc762234b622ab2e7fa3328275d
+vendor/bin/sensors.qti|5f962bb129099f282efd396a36c4e6bed5716dac
+vendor/lib/libsensor1.so|e8e9848a8d9e27f298d2789b365d962c2e7052ac
+vendor/lib/libsensor_reg.so|789af49787bf4f5fe6d99bd99bcced3a3f088ddc
+vendor/lib/sensor_calibrate.so|97424305830c1a3d4e8bf7a7123d3c957b6fc136
+vendor/lib/sensors.rp.so|e83666a495f3280e829e0046c7627d9782ac1577
+vendor/lib/sensors.ssc.so|57ba67c001cb4bcc818a2ad22ef1396d2f60c81d
+vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|192824e6fd65b8341f21d4bfb1aa0c9e146a8bec
+vendor/lib64/libsensor1.so|cde648fa8af9a5db982f396823a684039f94ac8c
+vendor/lib64/libsensor_reg.so|806c7abfa901028c55d37f4128e2a6de18b8a47b
+vendor/lib64/sensor_calibrate.so|efb71205c08557d2961eff9c7bff20ca89a816d0
+vendor/lib64/sensors.rp.so|45fa1cc519a5fbc7ad359f406f3d125cae54aadc
+vendor/lib64/sensors.ssc.so|60fd557a52a70580b3dda1662820ba315b8b7411
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|e87c7e158e0b12a2fe6abcc3fded9fcff91fa989
 
 # DSP - from dpl_sprout - RKQ1.200928.002
 vendor/bin/dspservice|c7809e32581d5c6efac65a3a7689f43526c17bb8
@@ -972,12 +972,12 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so|398e5510db4d739de008b7230aa6e688d
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|19a1f7ffb8118c207aa8cb2318996605771c339a
 
 # Keymaster - from deen_sprout - QPKS30.54-22-12
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|ac0aabf396888c9dc8b6dc23291e190daa943e24
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|023a0e237fbc068a3191e91e5a1ec0ea5831d52b
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|6a04ddf5b92e97596e3764d2474ca8c26fa80139
 vendor/lib64/libkeymasterdeviceutils.so|5dcb23eb145570876dd1f4f05ca56a114bc9de56
 vendor/lib64/libkeymasterprovision.so|3eb6d2ed05871605cf020bf8459296aea2453f90
-vendor/lib64/libkeymasterutils.so|75d58b3f6aea66220c3352e4bef33dad9333fd1d
+vendor/lib64/libkeymasterutils.so|45cc1a92cf151c56d940c6a7e23d64a207357b9a
 
 # Graphics - from X00RD - QKQ1.191002.002-17.07.2003.405-20200330
 system/lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so|5b006423286008ba9b54b8c29e9ce2ab4b6fa14d
@@ -994,7 +994,7 @@ vendor/lib/libOpenCL.so|9ee3900265f9b855f526c0ce4fcfdaed51d62003
 vendor/lib/libRSDriver_adreno.so|374bce395a719d37638f8e92a4abd691f632298f
 vendor/lib/libadreno_utils.so|3a09e6720121f5b459a1fc7f9639b632da5832ec
 vendor/lib/libbccQTI.so|124156259b7900ac44c48dd9cf83b210d02d8c9d
-vendor/lib/libc2d30-a3xx.so|f27d63012451687d1e55c443cc1857992cdb126835691ba39d856f4a75cbe5e1
+vendor/lib/libc2d30-a3xx.so|abd44619c1d202f71f803951b81bf46ab162fb47
 vendor/lib/libc2d30_bltlib.so|4a486823ef2a9ea14f4f02c9eb9053ac5fb028af
 vendor/lib/libgsl.so|78d9d3b7863d9f4192a1d1a74d578061f3cdf806
 vendor/lib/libhdr_tm.so|4c371d0931245a65d0b4df768de8837bbdf4832e
@@ -1207,8 +1207,8 @@ vendor/lib/vendor.display.color@1.1.so|aabd4dea61fee83e732a0d0478b4a68560681095
 vendor/lib/vendor.display.color@1.2.so|dedc90f5fe55e9754d8b17476b3fc6faf3e77975
 vendor/lib/vendor.display.postproc@1.0.so|00f67e4ede7b82cbb853f2235eab89f7d916d236
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|fe613dceb7f9fd56ff1d17f8ef17b40d47a61eda
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libdisplayconfig.qti.so
+vendor/lib64/libdisp-aba.so|0620cb7c70c36de2757a34ae3bf545044ec6c34c
+vendor/lib64/libdisplayconfig.qti.so|e2a3971b331620828a6a7163b15170aad9935754
 vendor/lib64/vendor.display.color@1.0.so|3c9d7e4c66bd95db07022e43e5f55a774d584bba
 vendor/lib64/vendor.display.color@1.1.so|3e05113d52f1fc3b1938cb04491b441502f8ecea
 vendor/lib64/vendor.display.color@1.2.so|3934b711a70b026ea9396408ab0ea330851218c2
