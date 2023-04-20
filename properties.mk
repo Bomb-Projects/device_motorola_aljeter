@@ -87,11 +87,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.cnd.iwlan=1 \
-    persist.vendor.cne.logging.qxdm=3974
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.vendor.cne.feature=1
+    persist.vendor.cne.feature=1 \
+    persist.vendor.mwqem.enable=1
 
 # Crypto
 PRODUCT_PROPERTY_OVERRIDES += \

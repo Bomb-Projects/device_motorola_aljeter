@@ -85,10 +85,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     android.hardware.camera.provider@2.5-service
 
-# CNE
-PRODUCT_PACKAGES += \
-    libcnefeatureconfig
-
 # Doze
 PRODUCT_PACKAGES += \
     MotoDoze
