@@ -177,6 +177,7 @@ TARGET_SCREEN_WIDTH := 720
 
 # IMS
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
     ims-ext-common \
     ims_ext_common.xml
 
@@ -305,9 +306,11 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
     librmnetctl \
-    libsensorndkbridge \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
@@ -366,13 +369,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/qcom-caf/msm8996
-
-# Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Tethering
 PRODUCT_PACKAGES += \
