@@ -103,9 +103,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=4m \
     dalvik.vm.heapmaxfree=8m
 
+# DRM
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true
+
 # Soc
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.soc.manufacturer=QTI \
+    ro.soc.manufacturer=Qualcomm \
     ro.soc.model=MSM8937
 
 # Debug
