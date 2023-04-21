@@ -6,13 +6,6 @@
 
 DEVICE_PATH := device/motorola/jeter
 
-# Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := MSM8937
-TARGET_NO_BOOTLOADER := true
-
-# Platform
-TARGET_BOARD_PLATFORM := msm8937
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -26,8 +19,6 @@ TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
-
-BUILD_BROKEN_DUP_RULES := true
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -55,6 +46,17 @@ BOARD_SUPPORTS_SOUND_TRIGGER := false
 BOARD_USES_ALSA_AUDIO := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := jeter,aljeter
+
+# Build
+BUILD_BROKEN_DUP_RULES := true
+
+# Bootloader / Platform
+TARGET_BOOTLOADER_BOARD_NAME := MSM8937
+TARGET_NO_BOOTLOADER := true
+TARGET_BOARD_PLATFORM := msm8937
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/configs/bluetooth
 
@@ -65,18 +67,12 @@ TARGET_BOOTANIMATION_HALF_RES := true
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_NO_CHARGER_LED := true
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := jeter,aljeter
-
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
+# Display
+TARGET_SCREEN_DENSITY := 300
 
 # GPS
 TARGET_NO_RPC := true
 TARGET_USES_HARDWARE_QCOM_GPS := false
-
-# Display
-TARGET_SCREEN_DENSITY := 300
 
 # GPU
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
@@ -93,6 +89,9 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 TARGET_FS_CONFIG_GEN += \
     $(DEVICE_PATH)/configs/fs/config.fs \
     $(DEVICE_PATH)/configs/fs/mot_aids.fs
+
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
@@ -136,23 +135,23 @@ BOARD_RAMDISK_USE_XZ := true
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
+# Qualcomm support
+BOARD_USES_QCOM_HARDWARE := true
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_USES_OLD_MNC_FORMAT := true
-
-# Qualcomm support
-BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_motorola
 
-# Security patch level
-VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
-
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
+# Security patch level
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk

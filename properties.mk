@@ -90,10 +90,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1 \
     persist.vendor.mwqem.enable=1
 
-# Crypto
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.crypto.volume.filenames_mode=aes-256-cts
-
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=16m \
@@ -102,15 +98,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=4m \
     dalvik.vm.heapmaxfree=8m
-
-# DRM
-PRODUCT_PROPERTY_OVERRIDES += \
-    drm.service.enabled=true
-
-# Soc
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.soc.manufacturer=Qualcomm \
-    ro.soc.model=MSM8937
 
 # Debug
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -122,9 +109,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.hwc_set_default_colormode=true \
     ro.vendor.display.cabl=0 \
+    ro.vendor.qti.am.reschedule_service=true \
     vendor.display.disable_rotator_downscale=1 \
     vendor.display.enable_default_color_mode=1 \
-    vendor.gralloc.disable_ahardware_buffer=1
+    vendor.gralloc.disable_ahardware_buffer=1 \
+    vendor.display.use_smooth_motion=1
+
+# Dolby
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.audio_fx.current=dolby \
+    ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1 \
+    vendor.audio.dolby.ds2.enabled=true \
+    vendor.audio.dolby.ds2.hardbypass=true
+
+# DRM
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -141,7 +141,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.gralloc.gfx_ubwc_disable=0 \
     debug.sf.enable_hwc_vds=0 \
     debug.sf.hw=0 \
-    debug.cpurend.vsync=false \
     debug.sf.disable_client_composition_cache=1 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.recomputecrop=0 \
@@ -154,7 +153,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
-    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
     ro.surface_flinger.use_color_management=true
 
@@ -230,6 +228,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pedometer=false \
     ro.hardware.sensors=jeter
 
+# Soc
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=MSM8937
+
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
     ril.subscription.types=NV,RUIM \
@@ -239,6 +242,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=1 \
     vendor.service.qti.ims.enabled=1 \
     ro.telephony.default_network=22,22
+
+# Time
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.delta_time.enable=true
 
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -250,10 +257,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.mtp_adb=2e76 \
     ro.usb.ptp=2e83 \
     ro.usb.ptp_adb=2e84
-
-# Time
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.delta_time.enable=true
 
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
