@@ -1269,6 +1269,7 @@ vendor/bin/imsrcsd|bf29aac14856f29268c01599e5f6c7c6ae520685
 vendor/etc/init/imsdatadaemon.rc|29face37c174aebcd1358f7d7ad0bd4baf83063b
 vendor/etc/init/imsqmidaemon.rc|dda16d842b7c65296e97bc9921b723a43b152ba3
 vendor/etc/init/imsrcsd.rc|2dc42ff6e4b6dd389bd3bc9a7af30dec2f1a45df
+vendor/lib/lib-imsdpl.so|0b0f24b10ce3766d4832346d9fe231218c54835f
 vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so|b81a1e6d0e24ba7a5581636749aa3c70f703c3d3
 vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so|18aa4feffccd2548c19436da5048ac088a1a8b29
 vendor/lib64/com.qualcomm.qti.imscmservice@2.2.so|0e304839bc29e5011f789bd86e3463580295fa55
@@ -1276,6 +1277,7 @@ vendor/lib64/com.qualcomm.qti.uceservice@2.0.so|635ab9768095ab02e1d0625cd2cc4c06
 vendor/lib64/com.qualcomm.qti.uceservice@2.1.so|e8721e2676a1bbc7577863c8a7249579f734ed2c
 vendor/lib64/com.qualcomm.qti.uceservice@2.2.so|66833b47d75ab2af6ac78f14ac32e1be50f2d817
 vendor/lib64/com.qualcomm.qti.uceservice@2.3.so|d01e1bafe36db7cda145b36145be3b95a968fc65
+vendor/lib64/lib-imsdpl.so|b66d4f789c750541f43078f2167870cf904bd67b
 vendor/lib64/lib-imsSDP.so|22fb91b5c7f614f76b9361ee08104ecdaf0501ef
 vendor/lib64/lib-imscmservice.so|1256a36db63ed10e3f7f6c659d5086bf1ed8752f
 vendor/lib64/lib-imsqimf.so|537d9b4a8038860a2c96a5e8f648930b4334ae17
@@ -1295,7 +1297,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|f0eb547d3da5557b08e3e25ec957bffc565
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|7c89ba68743fc5e03b64e22baed6717fc099e6cf
 
 # Sensors - from deen_sprout - QPKS30.54-22-11
-vendor/bin/capsense_reset
+vendor/bin/capsense_reset|95cf79fc1dfdc7d95150fbe2c0d17c40f736b9a5
 vendor/bin/sensors.qti|5f962bb129099f282efd396a36c4e6bed5716dac
 vendor/lib/libsensor1.so|e8e9848a8d9e27f298d2789b365d962c2e7052ac
 vendor/lib/libsensor_reg.so|789af49787bf4f5fe6d99bd99bcced3a3f088ddc
