@@ -43,13 +43,13 @@ vendor/lib64/libaudioalsa.so|534d4dc07fecea0611273c745721b1ed2015a3a3
 vendor/lib64/libqtigef.so|b3f1cb946809bfe20a4afced73b4fd24c5591421
 
 # Audio ACDB
-vendor/etc/acdbdata/Bluetooth_cal.acdb
-vendor/etc/acdbdata/General_cal.acdb
-vendor/etc/acdbdata/Global_cal.acdb
-vendor/etc/acdbdata/Handset_cal.acdb
-vendor/etc/acdbdata/Hdmi_cal.acdb
-vendor/etc/acdbdata/Headset_cal.acdb
-vendor/etc/acdbdata/Speaker_cal.acdb
+vendor/etc/acdbdata/Bluetooth_cal.acdb|68c6a7359e1b8751bbfc71539d52762b3ff46e42
+vendor/etc/acdbdata/General_cal.acdb|35c26dae78f656018ca018395a1ca2fa47619c73
+vendor/etc/acdbdata/Global_cal.acdb|24564af7cf465e6a8ffc3f28dae218c577969018
+vendor/etc/acdbdata/Handset_cal.acdb|26aa30e30befe93324e90e61c2ca422c41ffcf37
+vendor/etc/acdbdata/Hdmi_cal.acdb|d9508ef3d88ad6efae9cacf181bd8fea38277814
+vendor/etc/acdbdata/Headset_cal.acdb|baf6ed499bf87d5cb19c99f2863450fb7da004af
+vendor/etc/acdbdata/Speaker_cal.acdb|a551fbea3a8c473535adfe1b73fb3298f9177ff9
 
 # Bluetooth - from LA.UM.10.6.2.r1-02500-89xx.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|34317bdfb200d3e0e09a49ffbb978804c4363407
