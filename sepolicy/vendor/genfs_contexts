@@ -6,6 +6,10 @@ genfscon sysfs /class/capsense u:object_r:sysfs_capsense:s0
 genfscon sysfs /class/input/input5/capsense_top u:object_r:sysfs_capsense:s0
 genfscon sysfs /class/input/input6/capsense_bottom u:object_r:sysfs_capsense:s0
 
+# Extcon sysfs
+genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-02/200f000.qcom,spmi:qcom,pmi8950@2:qcom,qpnp-smbcharger/extcon                u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,mdss_wb_panel/extcon                                                                                 u:object_r:sysfs_extcon:s0
+
 # Lights
 genfscon sysfs /class/lcd_bias u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/1a00000.qcom,mdss_mdp/1a00000.qcom,mdss_mdp:qcom,mdss_fb_primary/leds u:object_r:sysfs_leds:s0
