@@ -173,7 +173,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.video.disable.ubwc=1 \
     vendor.vidc.disable.split.mode=1 \
     vidc.enc.disable.pq=true
-
+    
+# OpenGL
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version=196610    
+    
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
