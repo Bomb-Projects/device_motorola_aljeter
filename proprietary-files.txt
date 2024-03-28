@@ -881,13 +881,13 @@ vendor/lib/vendor.display.color@1.1.so|6ca9bced4c7937a1e951f7d9f4021d442d56d629
 vendor/lib/vendor.display.color@1.2.so|9a1497cf76ae3caafc890b5652893ac42b529e55
 vendor/lib/vendor.display.postproc@1.0.so|e979f09c3bc5be29c6ae07dbcc5518986a1afefe
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|48ce093219f51a7d27d87f479545dcd2fb04b1a2
+vendor/lib64/libdisp-aba.so|9404f35516077caabcaa06e9c62e142feee1fe26
+vendor/lib64/libdisplayconfig.qti.so|e2a3971b331620828a6a7163b15170aad9935754
 vendor/lib64/vendor.display.color@1.0.so|c61cb9344eef21f508e909470e27a7fc35aa1014
 vendor/lib64/vendor.display.color@1.1.so|b54b98b7fd155090fd2df43af1f80e1f5a31b7eb
 vendor/lib64/vendor.display.color@1.2.so|e31187043db05574236c647a9572c9f3e67ba713
 vendor/lib64/vendor.display.postproc@1.0.so|0b7e4ff53e3ed0019bd34c35dbdd2764f61ad429
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|18409cdc00dca614a301094aecfb4ce35da59e67
-vendor/lib64/libdisp-aba.so|9404f35516077caabcaa06e9c62e142feee1fe26
-vendor/lib64/libdisplayconfig.qti.so|e2a3971b331620828a6a7163b15170aad9935754
 
 # Display QDCMs
 vendor/etc/qdcm_calib_data_mipi_mot_video_djn_hd_570.xml
@@ -974,10 +974,10 @@ vendor/lib/egl/libGLESv2_adreno.so|ffa502de44175d16b511e7b6b8181d6d62b20d4e
 vendor/lib/egl/libQTapGLES.so|c0e0d96e813716ca8dc3add0e9983a19e8b6d406
 vendor/lib/egl/libq3dtools_adreno.so|b970511e8c02f60fad60ee66a4adefcd3e25c6d7
 vendor/lib/libC2D2.so|e85a06abb140e40b88b119a53f62a96c584a4233
-vendor/lib/libc2d30-a3xx.so|abd44619c1d202f71f803951b81bf46ab162fb47
 vendor/lib/libCB.so|c7e48b63ad6985f2ab971119b107b28a1d941b39
 vendor/lib/libOpenCL.so|90dd47a0a0bdcd5632e437d0c66a4e9aed9aa419
 vendor/lib/libadreno_utils.so|d04e68dafe329eaea684b9f1ea2adac7dda10556
+vendor/lib/libc2d30-a3xx.so|abd44619c1d202f71f803951b81bf46ab162fb47
 vendor/lib/libc2d30_bltlib.so|8056ec5154edf5c09b242a4515484885e49edea3
 vendor/lib/libgsl.so|ebc26570b996c8c34cfca4012d487b83bd3fe6d5
 vendor/lib/libhdr_tm.so|466542ad2d4eb6cbbde7c58a650c16aa4c8def93

@@ -34,7 +34,7 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
 	    ;;
 
-        vendor/lib/libmmcamera_vstab_module.so | vendor/lib/libjscore.so)
+        vendor/lib/libmmcamera_vstab_module.so|vendor/lib/libjscore.so)
             sed -i 's|libgui.so|libwui.so|g' "${2}"
             ;;
 

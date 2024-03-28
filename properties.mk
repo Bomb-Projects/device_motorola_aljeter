@@ -69,6 +69,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=pronto
 
+ # Adreno
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno
+
 # DRM
 PRODUCT_VENDOR_PROPERTIES += \
     drm.service.enabled=true
@@ -125,15 +130,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.qfp=false
-
-# IMS
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.ims.disableIMSLogs=1 \
-    persist.vendor.ims.disableADBLogs=1 \
-    persist.vendor.ims.disableDebugDataPathLogs=1 \
-    persist.vendor.ims.disableDebugLogs=1 \
-    persist.vendor.ims.disableSigHandler=1 \
-    persist.vendor.ims.disableQXDMLogs=1
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
