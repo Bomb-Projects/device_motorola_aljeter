@@ -5,24 +5,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.min.duration.secs=30 \
     audio.offload.video=true \
     persist.vendor.audio.dualmic.config=endfire \
-    persist.vendor.audio.fluence.voicecall=true \
-    persist.vendor.audio.fluence.voicecomm=true \
-    persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.hw.binder.size_kbyte=1024 \
     persist.vendor.audio.speaker.prot.enable=false \
     persist.vendor.bt.enable.splita2dp=false \
     ro.af.client_heap_size_kbyte=7168 \
     ro.config.max_starting_bg=8 \
     ro.config.vc_call_vol_steps=8 \
-    ro.vendor.audio.sdk.fluencetype=fluence \
-    ro.vendor.audio.sdk.ssr=false \
     vendor.audio_hal.period_size=240 \
     vendor.audio.dolby.ds2.enabled=false \
     vendor.audio.dolby.ds2.hardbypass=false \
     vendor.audio.feature.anc_headset.enable=true \
     vendor.audio.feature.compr_voip.enable=true \
     vendor.audio.feature.custom_stereo.enable=true \
-    vendor.audio.feature.fluence.enable=true \
     vendor.audio.feature.fm.enable=true \
     vendor.audio.feature.hfp.enable=true \
     vendor.audio.feature.multi_voice_session.enable=true \
@@ -60,6 +54,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.calfile4=/vendor/etc/acdbdata/Hdmi_cal.acdb \
     persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb \
     persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Speaker_cal.acdb
+
+# Audio Fluence
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.feature.fluence.enable=true \
+    persist.vendor.audio.fluence.speaker=false \
+    persist.vendor.audio.dualmic.config=endfire \
+    persist.vendor.audio.fluence.voicecall=true \
+    persist.vendor.audio.fluence.voicecomm=true \
+    persist.vendor.audio.fluence.voicerec=true \
+    ro.vendor.audio.sdk.fluencetype=fluence
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -173,11 +177,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.video.disable.ubwc=1 \
     vendor.vidc.disable.split.mode=1 \
     vidc.enc.disable.pq=true
-    
+
 # OpenGL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opengles.version=196610    
-    
+    ro.opengles.version=196610
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
