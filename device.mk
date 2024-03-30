@@ -7,7 +7,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/jeter/jeter-vendor.mk)
+$(call inherit-product, vendor/motorola/aljeter/aljeter-vendor.mk)
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 27
@@ -404,8 +404,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-aljeter.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-aljeter.conf
+    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Trust HAL
 PRODUCT_PACKAGES += \
