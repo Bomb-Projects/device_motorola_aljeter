@@ -197,7 +197,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.scrn_ortn=false \
     ro.vendor.sensors.cmc=false \
     ro.vendor.sensors.pedometer=false \
-    ro.hardware.sensors=jeter
+    ro.hardware.sensors=aljeter
 
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
