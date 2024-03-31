@@ -41,6 +41,10 @@ function blob_fixup() {
         vendor/lib/libmmcamera2_pproc_modules.so)
             sed -i "s/ro.product.manufacturer/ro.product.nopefacturer/" "${2}"
             ;;
+
+        vendor/lib/sensors.ssc.so|vendor/lib64/sensors.ssc.so)
+            "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
+            ;;
     esac
 }
 
