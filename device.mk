@@ -339,7 +339,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
     init.mmi.rc \
-    init.msm.usb.configfs.rc \
     init.oem.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
@@ -401,13 +400,13 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
+    android.hardware.usb@1.3-service.basic \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh
+
+PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/usb/etc
 
 # Vibrator
 PRODUCT_PACKAGES += \
