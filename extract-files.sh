@@ -45,6 +45,10 @@ function blob_fixup() {
         vendor/lib/sensors.ssc.so|vendor/lib64/sensors.ssc.so)
             "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
             ;;
+
+        vendor/lib/libSonyDualPDLibrary.so|vendor/lib/libSonyDualPDParam.so|vendor/lib/libarcsoft_beautyshot.so|vendor/lib/libchromaflash.so|vendor/lib/libfamily_photo.so|vendor/lib/libmmcamera_hdr_gb_lib.so|vendor/lib/libmorpho_image_stabilizer4.so|vendor/lib/liboptizoom.so|vendor/lib/libseemore.so|vendor/lib/libubifocus.so)
+            ${PATCHELF_0_17_2} --replace-needed libstdc++.so libstdc++_vendor.so "${2}"
+            ;;
     esac
 }
 

@@ -48,7 +48,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libstdc++.vendor \
+    libstdc++_vendor \
     libwui
 
 PRODUCT_PACKAGES += \
