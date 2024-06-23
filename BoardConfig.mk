@@ -80,7 +80,7 @@ DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/vintf/manifest.xml
 
 DEVICE_MATRIX_FILE   := \
-    $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+    hardware/qcom-caf/common/compatibility_matrix.xml
 
 TARGET_FS_CONFIG_GEN += \
     $(DEVICE_PATH)/config.fs \
