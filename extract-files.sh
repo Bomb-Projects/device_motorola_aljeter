@@ -26,16 +26,18 @@ source "${HELPER}"
 
 function blob_fixup() {
     case "${1}" in
-	vendor/lib/libmmcamera_ppeiscore.so)
-	    "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
-	    ;;
-
+        # Fix missing symbols
         system_ext/lib64/lib-imsvideocodec.so)
-            "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
-	    ;;
+            if ! grep -q "libgui_shim_vendor.so" "${2}"; then
+                "${PATCHELF}" --add-needed "libgui_shim_vendor.so" "${2}"
+            fi
+            ;;
 
-        vendor/lib/libmmcamera_vstab_module.so|vendor/lib/libjscore.so)
-            sed -i 's|libgui.so|libwui.so|g' "${2}"
+        vendor/lib/libmot_gpu_mapper.so|vendor/lib/libmmcamera_vstab_module.so|vendor/lib/libjscore.so)
+            "${PATCHELF}" --replace-needed "libgui.so" "libgui_shim_vendor.so" "${2}"
+            if grep -q "libui.so" "${2}"; then
+                "${PATCHELF}" --replace-needed "libui.so" "libui_shim.so" "${2}"
+            fi
             ;;
 
         vendor/lib/libmmcamera2_pproc_modules.so)
@@ -43,11 +45,15 @@ function blob_fixup() {
             ;;
 
         vendor/lib/sensors.ssc.so|vendor/lib64/sensors.ssc.so)
-            "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
+            if grep -q "libutils.so" "${2}"; then
+                "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            fi
             ;;
 
-        vendor/lib/libSonyDualPDLibrary.so|vendor/lib/libSonyDualPDParam.so|vendor/lib/libarcsoft_beautyshot.so|vendor/lib/libchromaflash.so|vendor/lib/libfamily_photo.so|vendor/lib/libmmcamera_hdr_gb_lib.so|vendor/lib/libmorpho_image_stabilizer4.so|vendor/lib/liboptizoom.so|vendor/lib/libseemore.so|vendor/lib/libubifocus.so)
-            ${PATCHELF_0_17_2} --replace-needed libstdc++.so libstdc++_vendor.so "${2}"
+        vendor/lib/libSonyDualPDLibrary.so|vendor/lib/libSonyDualPDParam.so|vendor/lib/libarcsoft_beautyshot.so|vendor/lib/libfamily_photo.so|vendor/lib/libmmcamera_hdr_gb_lib.so|vendor/lib/libmorpho_image_stabilizer4.so)
+            if grep -q "libstdc++.so" "${2}"; then
+                "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+            fi
             ;;
     esac
 }
