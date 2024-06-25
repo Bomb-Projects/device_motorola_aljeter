@@ -75,7 +75,8 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -324,6 +325,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
+    libsqlite.vendor \
+    libnetutils.vendor \
     librmnetctl \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
@@ -366,8 +369,9 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl:64 \
-    android.hardware.sensors@1.0-service
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service \
+    libpower.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
