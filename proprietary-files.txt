@@ -135,17 +135,6 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|000e0d2ac4450c0ad8baca06985bc
 vendor/lib64/vendor.qti.latency@2.0.so|44e613964229ad11c5a69d1861b24f5897eff1d7
 vendor/lib64/vendor.qti.latency@2.1.so|3f5e3be5fcbc96b5f4c87dd76cfcc0e1dc858ad0
 
-# Camera - from vince
-vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
-vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
-vendor/lib/libllvd_sw_tnr.so|406895e2ae614ac84a62d1758bce1810b99c5cda
-vendor/lib/libmmcamera_ppeiscore.so|8446e6b88a04d3da1bc6c4466417739a90cbb63c
-vendor/lib/libmmcamera_sw_tnr.so|59b0f350eb0cfa85399c296af14ac680ca99705e
-vendor/lib/liboptizoom.so|1e92993743636c045438f1f15c07c1e835d9ca46
-vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
-vendor/lib/libtrueportrait.so|8d5c3f733a6351610f70592bd65f7461e0c55135
-vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
-
 # Camera-actuators
 vendor/lib/libactuator_dw9714p.so
 vendor/lib/libactuator_dw9714p_byd.so
@@ -824,6 +813,7 @@ vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmorpho_image_stabilizer4.so
 vendor/lib/libmot-qc-fd-offline.so
+vendor/lib/libmot_gpu_mapper.so
 vendor/lib/libmpbase.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
@@ -1084,6 +1074,7 @@ vendor/lib64/libmmosal.so|e9fdb48163e92b089cea0c397723a8416436c272
 -vendor/lib/libOmxSwVencMpeg4.so|577598f797ad6d18bf80279760a4c02bbcb2c532
 
 # Misc
+vendor/lib/libgralloc1.so
 vendor/lib/libmot_afd.so
 
 # Perf - from LA.UM.10.6.2.r1-02500-89xx.0

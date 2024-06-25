@@ -49,7 +49,6 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     libstdc++_vendor \
-    libwui
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5 \
@@ -376,8 +375,9 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libui_shim \
-    libgui_shim
+    libgui_shim \
+    libui_shim.vendor \
+    libgui_shim_vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

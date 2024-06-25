@@ -26,16 +26,16 @@ source "${HELPER}"
 
 function blob_fixup() {
     case "${1}" in
-	vendor/lib/libmmcamera_ppeiscore.so)
-	    "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
-	    ;;
-
         system_ext/lib64/lib-imsvideocodec.so)
             "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
 	    ;;
 
-        vendor/lib/libmmcamera_vstab_module.so|vendor/lib/libjscore.so)
-            sed -i 's|libgui.so|libwui.so|g' "${2}"
+         vendor/lib/libmmcamera_vstab_module.so|vendor/lib/libjscore.so|vendor/lib/libmot_gpu_mapper.so)
+            ${PATCHELF_0_17_2} --replace-needed libgui.so libgui_shim_vendor.so "${2}"
+            ;;
+
+         vendor/lib/libmot_gpu_mapper.so)
+            ${PATCHELF_0_17_2} --add-needed "libui_shim.so" "${2}"
             ;;
 
         vendor/lib/libmmcamera2_pproc_modules.so)
@@ -46,7 +46,7 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
             ;;
 
-        vendor/lib/libSonyDualPDLibrary.so|vendor/lib/libSonyDualPDParam.so|vendor/lib/libarcsoft_beautyshot.so|vendor/lib/libchromaflash.so|vendor/lib/libfamily_photo.so|vendor/lib/libmmcamera_hdr_gb_lib.so|vendor/lib/libmorpho_image_stabilizer4.so|vendor/lib/liboptizoom.so|vendor/lib/libseemore.so|vendor/lib/libubifocus.so)
+        vendor/lib/libSonyDualPDLibrary.so|vendor/lib/libSonyDualPDParam.so|vendor/lib/libarcsoft_beautyshot.so|vendor/lib/libfamily_photo.so|vendor/lib/libmmcamera_hdr_gb_lib.so|vendor/lib/libmorpho_image_stabilizer4.so)
             ${PATCHELF_0_17_2} --replace-needed libstdc++.so libstdc++_vendor.so "${2}"
             ;;
     esac
