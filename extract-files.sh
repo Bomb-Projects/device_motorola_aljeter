@@ -30,12 +30,12 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
 	    ;;
 
-         vendor/lib/libmmcamera_vstab_module.so|vendor/lib/libjscore.so|vendor/lib/libmot_gpu_mapper.so)
-            ${PATCHELF_0_17_2} --replace-needed libgui.so libgui_shim_vendor.so "${2}"
-            ;;
-
          vendor/lib/libmot_gpu_mapper.so)
             ${PATCHELF_0_17_2} --add-needed "libui_shim.so" "${2}"
+            ;;
+
+         vendor/lib/libmmcamera_vstab_module.so|vendor/lib/libjscore.so|vendor/lib/libmot_gpu_mapper.so)
+            sed -i 's|libgui.so|libgui_shim_vendor.so|g' "${2}"
             ;;
 
         vendor/lib/libmmcamera2_pproc_modules.so)
