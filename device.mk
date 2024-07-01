@@ -364,6 +364,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/qcom-caf/msm8996
 
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 27
+
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
