@@ -4139,9 +4139,6 @@ case "$target" in
 	# Limit the min frequency to 825MHz
 	echo 825000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
-        # Enable oom_reaper
-        echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
-
         # Enable bus-dcvs
         for cpubw in /sys/class/devfreq/*qcom,cpubw*
         do
@@ -4296,13 +4293,6 @@ case "$target" in
 
         echo 0-3 > /dev/cpuset/background/cpus
         echo 0-3 > /dev/cpuset/system-background/cpus
-
-        # Enable oom_reaper
-	if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
-		echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
-	else
-		echo 1 > /proc/sys/vm/reap_mem_on_sigkill
-	fi
 
 	# Enable bus-dcvs
 	for device in /sys/devices/platform/soc

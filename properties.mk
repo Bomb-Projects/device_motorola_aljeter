@@ -182,6 +182,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.disable.split.mode=1 \
     vidc.enc.disable.pq=true
 
+# LMKD
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.kill_heaviest_task=true
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
