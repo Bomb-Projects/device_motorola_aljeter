@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/motorola/jeter
+DEVICE_PATH := device/motorola/aljeter
 
 # Architecture
 TARGET_ARCH := arm64
@@ -47,7 +47,7 @@ BOARD_USES_ALSA_AUDIO := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := jeter,aljeter
+TARGET_OTA_ASSERT_DEVICE := aljeter
 
 # Build
 BUILD_BROKEN_DUP_RULES := true
@@ -66,10 +66,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # Charger
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_NO_CHARGER_LED := true
-
-# DEX
-WITH_DEXPREOPT := true
-WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
 
 # Display
 TARGET_SCREEN_DENSITY := 300
@@ -108,14 +104,14 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 
-TARGET_KERNEL_SOURCE := kernel/motorola/jeter
-TARGET_KERNEL_CONFIG := jeter_defconfig
+TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
+TARGET_KERNEL_CONFIG := aljeter_defconfig
+TARGET_KERNEL_RECOVERY_CONFIG := aljeter_recovery_defconfig
 TARGET_KERNEL_VERSION := 4.9
 
 # Clang
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := proton
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton-clang
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r450784e
 
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
@@ -180,4 +176,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-include vendor/motorola/jeter/BoardConfigVendor.mk
+include vendor/motorola/aljeter/BoardConfigVendor.mk

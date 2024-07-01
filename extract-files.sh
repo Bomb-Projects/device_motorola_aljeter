@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=jeter
+DEVICE=aljeter
 VENDOR=motorola
 
 # Load extract_utils and do some sanity checks
