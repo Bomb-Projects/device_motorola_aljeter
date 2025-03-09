@@ -402,6 +402,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/usb/etc
 
+# Updater
+AB_OTA_UPDATER := false
+
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
