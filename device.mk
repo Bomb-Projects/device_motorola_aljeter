@@ -62,7 +62,6 @@ PRODUCT_PACKAGES += \
 
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
