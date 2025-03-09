@@ -83,7 +83,7 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8937 \
-    hwcomposer.msm8937 \
+    hwcomposer.qcom \
     libdisplayconfig \
     libqdMetaData.system \
     libtinyxml \

@@ -69,12 +69,6 @@ TARGET_SCREEN_DENSITY := 300
 TARGET_NO_RPC := true
 TARGET_USES_HARDWARE_QCOM_GPS := false
 
-# GPU
-TARGET_DISABLE_POSTRENDER_CLEANUP := true
-TARGET_USES_GRALLOC1 := true
-TARGET_USES_HWC2 := true
-TARGET_USES_ION := true
-
 # VINTF
 DEVICE_FRAMEWORK_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/vintf/framework_manifest.xml
@@ -123,6 +117,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so
+
+# Media
+TARGET_USES_ION := true
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
