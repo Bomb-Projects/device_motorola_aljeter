@@ -61,7 +61,6 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 # Dynamic
-PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 
@@ -126,7 +125,7 @@ PRODUCT_PACKAGES += \
 
 # Fastbootd
 PRODUCT_PACKAGES += \
-    fastbootd    
+    fastbootd
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -158,7 +157,7 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
- 
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
@@ -230,7 +229,7 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
-    
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -241,7 +240,7 @@ PRODUCT_PACKAGES += \
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage    
+    $(LOCAL_PATH)/overlay-lineage
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -281,7 +280,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
 # Properties
--include $(LOCAL_PATH)/properties.mk    
+-include $(LOCAL_PATH)/properties.mk
 
 # IDC
 PRODUCT_COPY_FILES += \
@@ -384,15 +383,14 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/qcom-caf/msm8996
+    $(LOCAL_PATH)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi    
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Shipping API
-PRODUCT_SHIPPING_API_LEVEL := 27 
+PRODUCT_SHIPPING_API_LEVEL := 27
 
 # Speed Profiles
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
@@ -441,3 +439,4 @@ PRODUCT_COPY_FILES += \
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/aljeter/aljeter-vendor.mk)
+
