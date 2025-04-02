@@ -269,20 +269,6 @@ $(FIRMWARE_WIDEVINE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_WIDEVINE_SYMLINKS)
 
-WIFI_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/wlan/prima/
-$(WIFI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating WCNSS Symlinks: $@"
-	@rm -rf $@/*
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin $(dir $@)
-	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_wlan_nv_Argentina.bin $(dir $@)
-	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_wlan_nv_Brazil.bin $(dir $@)
-	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_wlan_nv_India.bin $(dir $@)
-	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_wlan_nv_epa.bin $(dir $@)
-	$(hide) ln -sf /vendor/etc/wifi/WCNSS_wlan_dictionary.dat $(dir $@)
-
-ALL_DEFAULT_INSTALLED_MODULES += $(WIFI_SYMLINKS)
-
 CNE_LIBS := libvndfwk_detect_jni.qti.so
 CNE_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/app/CneApp/lib/arm64/,$(notdir $(CNE_LIBS)))
 $(CNE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
