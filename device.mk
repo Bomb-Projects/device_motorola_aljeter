@@ -6,6 +6,9 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
+# Add common definitions for Qualcomm
+ $(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
