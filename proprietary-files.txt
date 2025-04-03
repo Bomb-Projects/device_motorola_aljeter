@@ -1042,12 +1042,9 @@ system_ext/lib/extractors/libmmparserextractor.so|1902f82487e88250aa53e4f7c82c78
 system_ext/lib/libmmosal.so|8c7f0a071f84ec2ac9522bf448cb902a3ece2405
 system_ext/lib/libmmparser_lite.so|f7ed21ea0de0de02741854d78518c977ef5763f5
 system_ext/lib64/libmmosal.so|ef19a38be8283c87eabe96f74bc8a71881ab1f0a
-vendor/lib/libOmxVideoDSMode.so|71c4f23de93e91931c077ed511301185152422da
 vendor/lib/libOmxVpp.so|825146c3065d4f08ac54de62c43d4be31debca31
-vendor/lib/libmmosal.so|e23d6d1b2a035c08ffd7ac72d5241ebff37f0d14
 vendor/lib/libvpplibrary.so|de25e347aeb813bfe2d091cbd61cc70219242af3
 vendor/lib/libvqzip.so|f85628ea634df1c31d69380d960ad7ea3396e7b2
-vendor/lib64/libmmosal.so|e9fdb48163e92b089cea0c397723a8416436c272
 
 # Media OMX - from LA.UM.10.6.2.r1-02500-89xx.0
 -vendor/lib/libMpeg4SwEncoder.so|b2c80ebcc6120c28576f1786d777eb95c02e4bc8
@@ -1150,7 +1147,6 @@ system_ext/lib64/lib-imsvtextutils.so|1acf1de305e455a3a924483e5652b37133d10fd1
 system_ext/lib64/lib-imsvtutils.so|dfc5cf0854fe38c191a53ec3bd2a322d05d85567
 system_ext/lib64/libimscamera_jni.so|486abdb09a82ccee5e49307a17ba3dc9efdf5e9d;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so|f8be2575f8eaef8bb89a4bc049381ebffe857831;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|4cf9e97f526c6278c5e2136e00d1fb800fb941aa
 -system_ext/priv-app/ims/ims.apk|bcb4343b282907a642ae888bfaede63e9159894e
 vendor/bin/ims_rtp_daemon|3fbadd85fa6057fbc165f149d65854d76c9e5eef
 vendor/etc/init/ims_rtp_daemon_legacy.rc|104b2a879db4d3dd44e74a3d7f6e69f6972c9129
